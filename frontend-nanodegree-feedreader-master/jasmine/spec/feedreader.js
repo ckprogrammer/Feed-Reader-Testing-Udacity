@@ -33,8 +33,8 @@ $(function() {
          */
          it('URL defined and URL is not empty', function() {
            allFeeds.forEach(function(feed) {
-             expect(feed.url).toBeDefined();
-             expect(feed.url).not.toBe(0);
+             expect(feed.url).toBeDefined();  //This is checking if the url has been defined.
+             expect(feed.url).not.toBe(0);    //this is checking if the url is not empty.
            });
          });
 
@@ -45,8 +45,8 @@ $(function() {
          */
          it('Name defined and Name is not empty', function() {
            allFeeds.forEach(function(feed) {
-             expect(feed.name).toBeDefined();
-             expect(feed.name).not.toBe(0);
+             expect(feed.name).toBeDefined();  //This is checking if there are feed names.
+             expect(feed.name).not.toBe(0);    //this is checking if the names are not empty.
            });
          });
     });
@@ -61,7 +61,7 @@ $(function() {
        * hiding/showing of the menu element.
        */
        it('menu element is hidden by default', function() {
-         expect($('body').hasClass('menu-hidden')).toBe(true);
+         expect($('body').hasClass('menu-hidden')).toBe(true);   //I found the class 'menu-hidden' in the index.html as well as in the styles.css documents.
        });
 
        /* TODO: Write a test that ensures the menu changes
@@ -71,10 +71,10 @@ $(function() {
         */
         it('The menu displays and hides when it is clicked', function() {
           $('.menu-icon-link').click();
-          expect($('body').hasClass('menu-hidden')).not.toBe(true);
+          expect($('body').hasClass('menu-hidden')).not.toBe(true);   //when the user clicks the hamburger icon, the hidden-menu opens.
 
           $('.menu-icon-link').click();
-          expect($('body').hasClass('menu-hidden')).toBe(true);
+          expect($('body').hasClass('menu-hidden')).toBe(true);  //when the user clicks the hamburger icon, it is checking that the menu closes.
         });
     });
 
@@ -96,7 +96,7 @@ $(function() {
          });
        });
        it('loadFeed function called and at least a single entry has loaded', function(done) {
-         expect($('.feed .entry')).not.toBeUndefined();
+         expect($('.feed .entry')).not.toBeUndefined(); //this is defining the .feed and .entry.
          done();
        });
      });
@@ -119,7 +119,7 @@ $(function() {
        });
 
        it('firstFeedLoaded is not the same as the new feed loaded', function(done) {
-         expect(firstFeedLoaded).not.toBe($('.feed').html());
+         expect(firstFeedLoaded).not.toBe($('.feed').html());  //This is comparing the first feed loaded to the second one and making sure that they are different.
          done();
        });
     });
