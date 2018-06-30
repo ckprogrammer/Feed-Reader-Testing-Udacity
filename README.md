@@ -1,6 +1,6 @@
 # Feed Reader Project, using jasmine to test the page
 #### By Clara Krafft
-## Link to my project: https://ckprogrammer.github.io/Neighborhood-Map-Project/neighborhood-map-master/index.html.
+## Link to my project: https://ckprogrammer.github.io/Feed-Reader-Testing-Udacity/frontend-nanodegree-feedreader-master/index.html.
 
 This is the Feed reader Project on [Udacity's Front End Web Developer Program](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001).
 
